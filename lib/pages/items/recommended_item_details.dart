@@ -84,7 +84,7 @@ class recommendedItemDetails extends StatelessWidget {
                     backgroundColor:AppColors.mainColor,
                     iconColor:Colors.white,
                     icon:Icons.remove),
-                BigText(text: "\$12.88 " + " X " +" 0 ", color: AppColors.mainBlackColor, size: Dimensions.font26,),
+                BigText(text: "\$13.44 " + " X " +" 0 ", color: AppColors.mainBlackColor, size: Dimensions.font26,),
                 AppIcon(
                     iconSize: Dimensions.iconSize24,
                     backgroundColor:AppColors.mainColor,
