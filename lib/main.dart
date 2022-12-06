@@ -3,9 +3,12 @@ import 'package:get/get.dart';
 import 'package:shop_app/pages/home/main_foot_page.dart';
 import 'package:shop_app/pages/items/popular_items_detail.dart';
 import 'package:shop_app/pages/items/recommended_item_details.dart';
+import 'helper/dependencies.dart' as dep;
 
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await dep.init();
 
-void main() {
   runApp(const MyApp());
 }
 
