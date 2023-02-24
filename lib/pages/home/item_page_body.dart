@@ -10,14 +10,14 @@ import '../../utils/dimensions.dart';
 import '../../widgets/app_column.dart';
 
 
-class FoodPageBody extends StatefulWidget {
-  const FoodPageBody({Key? key}) : super(key: key);
+class ItemPageBody extends StatefulWidget {
+  const ItemPageBody({Key? key}) : super(key: key);
 
   @override
-  State<FoodPageBody> createState() => _FoodPageBodyState();
+  State<ItemPageBody> createState() => _ItemPageBodyState();
 }
 
-class _FoodPageBodyState extends State<FoodPageBody> {
+class _ItemPageBodyState extends State<ItemPageBody> {
   PageController pageController = PageController(viewportFraction: 0.85);
   var _currPageValue=0.0;
   double _scaleFactor = 0.8;
@@ -81,6 +81,7 @@ class _FoodPageBodyState extends State<FoodPageBody> {
                 margin: const EdgeInsets.only(bottom: 2),
                 child: SmallText(text: "Top Viewed - Today"),
               ),
+
               //List of Items and Images
 
 
@@ -88,7 +89,7 @@ class _FoodPageBodyState extends State<FoodPageBody> {
           ),
         ),
         //List of items and images
-
+        SizedBox(height: Dimensions.height10,),
         ListView.builder(
               physics: NeverScrollableScrollPhysics(),
               shrinkWrap: true,

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:shop_app/pages/home/main_foot_page.dart';
+import 'package:shop_app/controllers/popular_product_controller.dart';
+import 'package:shop_app/pages/home/main_items_page.dart';
 import 'package:shop_app/pages/items/popular_items_detail.dart';
 import 'package:shop_app/pages/items/recommended_item_details.dart';
 import 'helper/dependencies.dart' as dep;
@@ -18,6 +19,8 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
+      Get.find<PopularProductController>().getPopularProductList();
+
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',

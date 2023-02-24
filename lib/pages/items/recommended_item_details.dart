@@ -47,7 +47,7 @@ class recommendedItemDetails extends StatelessWidget {
             flexibleSpace: FlexibleSpaceBar(
               background:
               Image.asset(
-                "assets/images/album4.png",
+                "assets/images/spanish.png",
                 width: double.maxFinite,
                 fit: BoxFit.cover,
               )

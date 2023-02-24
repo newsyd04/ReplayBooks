@@ -5,16 +5,16 @@ import 'package:shop_app/widgets/big_text.dart';
 import 'package:shop_app/widgets/small_text.dart';
 
 import '../../utils/dimensions.dart';
-import 'food_page_body.dart';
+import 'item_page_body.dart';
 
-class mainFootPage extends StatefulWidget {
-  const mainFootPage({Key? key}) : super(key: key);
+class mainItemsPage extends StatefulWidget {
+  const mainItemsPage({Key? key}) : super(key: key);
 
   @override
-  State<mainFootPage> createState() => _mainFootPageState();
+  State<mainItemsPage> createState() => _mainItemsPageState();
 }
 
-class _mainFootPageState extends State<mainFootPage> {
+class _mainItemsPageState extends State<mainItemsPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -56,7 +56,7 @@ class _mainFootPageState extends State<mainFootPage> {
           ),
           //Showing the body
           Expanded(child: SingleChildScrollView(
-            child: FoodPageBody(),
+            child: ItemPageBody(),
           )),
         ],
       ),
